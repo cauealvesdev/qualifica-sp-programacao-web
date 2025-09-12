@@ -1,0 +1,245 @@
+/* Estilos Gerais */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 20px;
+}
+
+header {
+    width: 100%;
+    max-width: 900px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h1 {
+    color: #4CAF50;
+    margin-top: 0;
+}
+
+main {
+    width: 100%;
+    max-width: 900px;
+}
+
+/* Divisória */
+.divider {
+    width: 80%;
+    margin: 40px auto;
+    border: 1px solid #ccc;
+}
+
+/* Mensagem de Carregamento */
+.loading-msg {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2em;
+    font-weight: bold;
+    color: #007bff;
+    z-index: 1000;
+}
+
+/* Campo de Busca */
+.search-container {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#searchInput {
+    padding: 10px;
+    width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    font-size: 1em;
+}
+
+/* Seção de Produtos */
+#products-list {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+/* Cartão de Produto */
+.product-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    padding: 20px;
+    width: 250px;
+    text-align: center;
+    transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+/* Efeitos de destaque com mouse e teclado */
+.product-card.highlight {
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    transform: translateY(-5px);
+}
+
+.product-card.active {
+    border: 3px solid #007bff;
+    box-shadow: 0 0 10px rgba(0, 123, 255, 0.5);
+}
+
+.price {
+    font-size: 1.5em;
+    color: #555;
+    margin: 10px 0;
+}
+
+.description {
+    line-height: 1.6;
+    text-align: left;
+}
+
+/* Botões de Ação */
+.actions {
+    margin-top: 15px;
+}
+
+.action-btn {
+    padding: 10px 15px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.9em;
+    transition: background-color 0.3s;
+    background-color: #4CAF50;
+    color: white;
+}
+
+.action-btn:hover {
+    background-color: #45a049;
+}
+
+.quantity-control {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 0;
+}
+
+.qty-btn {
+    background-color: #ddd;
+    color: #333;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.qty-btn:hover {
+    background-color: #ccc;
+}
+
+.quantity-value {
+    font-size: 1.2em;
+    margin: 0 10px;
+}
+
+/* Formulário de Checkout */
+.form-section {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    padding: 20px;
+    width: 350px;
+    margin: 20px auto;
+}
+
+.form-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.submit-btn {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 1em;
+    transition: background-color 0.3s;
+}
+
+.submit-btn:hover {
+    background-color: #0056b3;
+}
+
+/* Validação da Senha */
+.password-strength-container {
+    background-color: #e0e0e0;
+    border-radius: 4px;
+    height: 8px;
+    margin-top: 5px;
+    overflow: hidden;
+}
+
+.password-strength-bar {
+    height: 100%;
+    width: 0%;
+    transition: width 0.3s ease-in-out;
+}
+
+.strength-weak { background-color: #dc3545; }
+.strength-medium { background-color: #ffc107; }
+.strength-strong { background-color: #28a745; }
+
+.strength-text {
+    font-size: 0.8em;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+/* Contador de Caracteres */
+.char-counter {
+    text-align: right;
+    font-size: 0.8em;
+    color: #555;
+    margin-top: 5px;
+}
+
+/* Mensagens de Status */
+.hidden {
+    display: none;
+}
+
+.success-msg {
+    color: #28a745;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+.error-msg {
+    color: #dc3545;
+    font-size: 0.8em;
+    margin-top: 5px;
+}

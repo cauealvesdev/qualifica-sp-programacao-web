@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loja Virtual - Eventos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <h1>Loja Virtual Interativa</h1>
+        <div class="search-container">
+            <input type="text" id="searchInput" placeholder="Buscar produtos...">
+        </div>
+    </header>
+
+    <main>
+        <div id="products-list">
+            <div class="product-card" id="productCard1" data-product-name="Camiseta Básica de Algodão">
+                <h2>Camiseta Básica de Algodão</h2>
+                <p class="price">R$ 59,90</p>
+                <p class="description">
+                    Uma camiseta clássica, feita com 100% algodão de alta qualidade.
+                </p>
+                <p id="details-text1" class="hidden">Detalhes adicionais...</p>
+                <div class="actions">
+                    <button id="addToCartBtn1" class="action-btn">Adicionar ao Carrinho</button>
+                    <button id="toggleDetailsBtn1" class="action-btn">Ver Detalhes</button>
+                    <div class="quantity-control">
+                        <button id="decreaseBtn1" class="qty-btn">-</button>
+                        <span id="quantityValue1">1</span>
+                        <button id="increaseBtn1" class="qty-btn">+</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card" id="productCard2" data-product-name="Calça Jeans Slim">
+                <h2>Calça Jeans Slim</h2>
+                <p class="price">R$ 129,90</p>
+                <p class="description">
+                    Calça jeans com corte moderno, confortável e durável.
+                </p>
+                <div class="actions">
+                    <button id="addToCartBtn2" class="action-btn">Adicionar ao Carrinho</button>
+                    <button id="toggleDetailsBtn2" class="action-btn">Ver Detalhes</button>
+                    <div class="quantity-control">
+                        <button id="decreaseBtn2" class="qty-btn">-</button>
+                        <span id="quantityValue2">1</span>
+                        <button id="increaseBtn2" class="qty-btn">+</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card" id="productCard3" data-product-name="Blusa de Lã com Capuz">
+                <h2>Blusa de Lã com Capuz</h2>
+                <p class="price">R$ 99,90</p>
+                <p class="description">
+                    Quente e estilosa, ideal para os dias frios.
+                </p>
+                <div class="actions">
+                    <button id="addToCartBtn3" class="action-btn">Adicionar ao Carrinho</button>
+                    <button id="toggleDetailsBtn3" class="action-btn">Ver Detalhes</button>
+                    <div class="quantity-control">
+                        <button id="decreaseBtn3" class="qty-btn">-</button>
+                        <span id="quantityValue3">1</span>
+                        <button id="increaseBtn3" class="qty-btn">+</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <hr class="divider">
+        <section class="form-section">
+            <h3>Deixe seu comentário</h3>
+            <div class="form-group">
+                <label for="commentField">Comentário:</label>
+                <textarea id="commentField" placeholder="Escreva seu comentário aqui..." maxlength="200"></textarea>
+                <p id="charCounter" class="char-counter">0/200 caracteres</p>
+            </div>
+        </section>
+        
+        </main>
+    <script src="script.js"></script>
+</body>
+</html>

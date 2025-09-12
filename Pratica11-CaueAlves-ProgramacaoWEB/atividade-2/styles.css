@@ -1,0 +1,113 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.product-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    padding: 20px;
+    width: 350px;
+    text-align: center;
+    transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+/* Efeito de destaque ao passar o mouse */
+.product-card.highlight {
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    transform: translateY(-5px);
+}
+
+h1 {
+    color: #4CAF50;
+}
+
+.price {
+    font-size: 1.5em;
+    color: #555;
+    margin: 10px 0;
+}
+
+.description {
+    line-height: 1.6;
+    text-align: left;
+}
+
+#details-text {
+    background-color: #e9e9e9;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 15px;
+    text-align: left;
+}
+
+/* Estilo para a nova caixa de informações com mouseover */
+.more-info-box {
+    background-color: #ffeb3b;
+    color: #333;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 10px;
+    font-size: 0.9em;
+    text-align: center;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+.action-btn, .qty-btn {
+    padding: 10px 20px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s;
+}
+
+.action-btn {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.action-btn:hover {
+    background-color: #45a049;
+}
+
+.quantity-control {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 0;
+}
+
+.qty-btn {
+    background-color: #ddd;
+    color: #333;
+    padding: 5px 10px;
+}
+
+.qty-btn:hover {
+    background-color: #ccc;
+}
+
+#quantityValue {
+    font-size: 1.2em;
+    margin: 0 10px;
+}
+
+/* Classes de controle do JavaScript */
+.hidden {
+    display: none;
+}
+
+.success-msg {
+    color: #28a745;
+    font-weight: bold;
+    margin-left: 10px;
+}

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loja Virtual - Eventos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <h1>Loja Virtual Interativa</h1>
+    </header>
+
+    <main>
+        <div class="product-card">
+            <h2>Camiseta Básica de Algodão</h2>
+            <p class="price">R$ 59,90</p>
+            <p class="description">
+                Uma camiseta clássica, feita com 100% algodão de alta qualidade. Ideal para o dia a dia e fácil de combinar.
+            </p>
+            <p id="details-text" class="hidden">
+                Detalhes adicionais: Disponível em vários tamanhos (P, M, G, GG) e cores (preto, branco, cinza). Tecido super macio e durável, perfeito para todas as estações.
+            </p>
+
+            <div class="actions">
+                <button id="addToCartBtn" class="action-btn">Adicionar ao Carrinho</button>
+                <span id="confirmation-msg" class="hidden success-msg">Produto adicionado!</span>
+
+                <button id="toggleDetailsBtn" class="action-btn">Ver Detalhes</button>
+
+                <div class="quantity-control">
+                    <button id="decreaseBtn" class="qty-btn">-</button>
+                    <span id="quantityValue">1</span>
+                    <button id="increaseBtn" class="qty-btn">+</button>
+                </div>
+
+                <button id="clearCartBtn" class="action-btn">Limpar Carrinho</button>
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

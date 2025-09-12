@@ -1,0 +1,24 @@
+<hr class="divider">
+
+    <section class="form-section">
+        <h3>Formulário de Cadastro</h3>
+        <form id="registrationForm">
+            <div class="form-group">
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" placeholder="seu-email@exemplo.com">
+                <p id="emailError" class="error-msg hidden">Formato de e-mail inválido.</p>
+            </div>
+
+            <div class="form-group">
+                <label for="password">Senha:</label>
+                <input type="password" id="password" name="password" placeholder="Mínimo 8 caracteres">
+                <div class="password-strength-container">
+                    <div id="passwordStrengthBar" class="password-strength-bar"></div>
+                </div>
+                <p id="passwordStrengthText" class="strength-text"></p>
+            </div>
+
+            <button type="submit" class="submit-btn">Cadastrar</button>
+        </form>
+        <p id="formSuccess" class="success-msg hidden">Formulário enviado com sucesso!</p>
+    </section>

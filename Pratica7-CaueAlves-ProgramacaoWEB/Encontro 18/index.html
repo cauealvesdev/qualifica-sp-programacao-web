@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delícias da Padaria - Layouts com Grid e Flexbox</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="logo">Delícias da Padaria</div>
+        <nav class="nav">
+            <a href="#hero">Início</a>
+            <a href="#produtos">Produtos</a>
+            <a href="#depoimentos">Depoimentos</a>
+            <a href="#contato">Contato</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="hero" class="hero-section">
+            <div class="hero-text">
+                <h2>Pão Fresquinho, Todo Dia.</h2>
+                <p>Venha saborear nossos produtos artesanais, feitos com amor e dedicação.</p>
+                <button>Conheça o Cardápio</button>
+            </div>
+            <div class="hero-image">
+                <img src="images/hero-image.jpg" alt="Pães artesanais na cesta.">
+            </div>
+        </section>
+
+        <section id="produtos" class="produtos-section">
+            <h2>Nossos Produtos</h2>
+            <div class="galeria-produtos">
+                <div class="produto-card">
+                    <img src="images/pao-rustico.jpg" alt="Pão rústico">
+                    <div class="produto-info">
+                        <h3>Pão Rústico</h3>
+                        <p>Fermentação natural e casca crocante.</p>
+                        <button>Comprar</button>
+                    </div>
+                </div>
+                <div class="produto-card">
+                    <img src="images/croissant.jpg" alt="Croissant">
+                    <div class="produto-info">
+                        <h3>Croissant</h3>
+                        <p>Folhado e amanteigado.</p>
+                        <button>Comprar</button>
+                    </div>
+                </div>
+                <div class="produto-card">
+                    <img src="images/bolo-cenoura.jpg" alt="Bolo de cenoura">
+                    <div class="produto-info">
+                        <h3>Bolo de Cenoura</h3>
+                        <p>Fofinho e com cobertura de chocolate.</p>
+                        <button>Comprar</button>
+                    </div>
+                </div>
+                <div class="produto-card">
+                    <img src="images/pao-de-queijo.jpg" alt="Pão de queijo">
+                    <div class="produto-info">
+                        <h3>Pão de Queijo</h3>
+                        <p>Receita mineira tradicional.</p>
+                        <button>Comprar</button>
+                    </div>
+                </div>
+                <div class="produto-card">
+                    <img src="images/baguete.jpg" alt="Baguete">
+                    <div class="produto-info">
+                        <h3>Baguete</h3>
+                        <p>Perfeita para acompanhar.</p>
+                        <button>Comprar</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="depoimentos" class="depoimentos-section">
+            <h2>O que dizem nossos clientes</h2>
+            <div class="depoimentos-container">
+                <div class="depoimento-card">
+                    <p>"Os melhores pães da cidade! O pão rústico é incrível."</p>
+                    <cite>- Ana L.</cite>
+                </div>
+                <div class="depoimento-card">
+                    <p>"Atendimento excelente e produtos de alta qualidade. Recomendo!"</p>
+                    <cite>- João P.</cite>
+                </div>
+                <div class="depoimento-card">
+                    <p>"O bolo de cenoura é simplesmente perfeito."</p>
+                    <cite>- Maria S.</cite>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-col">
+            <h3>Navegação</h3>
+            <a href="#">Início</a>
+            <a href="#">Produtos</a>
+            <a href="#">Contato</a>
+        </div>
+        <div class="footer-col">
+            <h3>Contato</h3>
+            <p>Rua Exemplo, 123</p>
+            <p>Cidade - SP</p>
+            <p>Tel: (11) 99999-9999</p>
+        </div>
+        <div class="footer-col">
+            <h3>Horário</h3>
+            <p>Seg a Sex: 8h - 19h</p>
+            <p>Sáb: 8h - 14h</p>
+            <p>Dom: Fechado</p>
+        </div>
+    </footer>
+
+</body>
+</html>

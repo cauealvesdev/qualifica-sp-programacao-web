@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site Responsivo</title>
+    <link rel="stylesheet" href="styles.css">
+    </head>
+<body>
+    <header class="cabecalho">
+        <h1>Meu Site Responsivo</h1>
+        <nav class="menu">
+            <input type="checkbox" id="menu-toggle">
+            <label for="menu-toggle" class="menu-icon">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </label>
+            <ul>
+                <li><a href="#">Início</a></li>
+                <li><a href="#">Sobre</a></li>
+                <li><a href="#">Projetos</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="conteudo">
+        <section class="cards-section">
+            <h2>Nossos Serviços</h2>
+            <div class="cards-container">
+                <div class="card">
+                    <picture>
+                        <source srcset="images/mobile.jpg" media="(max-width: 767px)">
+                        <source srcset="images/tablet.jpg" media="(max-width: 1023px)">
+                        <img src="images/desktop.jpg" alt="Imagem de serviço" loading="lazy">
+                    </picture>
+                    <h3>Serviço 1</h3>
+                    <p>Descrição do serviço. Este card se adapta ao tamanho da tela.</p>
+                </div>
+                <div class="card">
+                    <picture>
+                        <source srcset="images/mobile.jpg" media="(max-width: 767px)">
+                        <source srcset="images/tablet.jpg" media="(max-width: 1023px)">
+                        <img src="images/desktop.jpg" alt="Imagem de serviço" loading="lazy">
+                    </picture>
+                    <h3>Serviço 2</h3>
+                    <p>Descrição do serviço. Este card se adapta ao tamanho da tela.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="tabela-section">
+            <h2>Tabela de Preços</h2>
+            <div class="tabela-responsiva">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Plano</th>
+                            <th>Recursos</th>
+                            <th>Preço</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td data-label="Plano">Básico</td>
+                            <td data-label="Recursos">Recursos Limitados</td>
+                            <td data-label="Preço">R$ 19,90</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Plano">Pro</td>
+                            <td data-label="Recursos">Recursos Completos</td>
+                            <td data-label="Preço">R$ 49,90</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+
+    <footer class="rodape">
+        <p>&copy; 2025. Todos os direitos reservados.</p>
+    </footer>
+
+</body>
+</html>

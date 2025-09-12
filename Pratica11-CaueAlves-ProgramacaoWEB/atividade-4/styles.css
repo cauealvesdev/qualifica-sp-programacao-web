@@ -1,0 +1,48 @@
+/* ... (mantenha os estilos anteriores) ... */
+
+.search-container {
+    text-align: center;
+    margin: 20px 0;
+}
+
+#searchInput {
+    padding: 10px;
+    width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    font-size: 1em;
+}
+
+#products-list {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+#products-list .product-card {
+    transition: all 0.3s ease-in-out;
+}
+
+/* Efeito de destaque para o produto ativo (navegação) */
+.product-card.active {
+    border: 3px solid #007bff;
+    box-shadow: 0 0 10px rgba(0, 123, 255, 0.5);
+}
+
+textarea {
+    width: 100%;
+    height: 100px;
+    resize: vertical;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.char-counter {
+    text-align: right;
+    font-size: 0.8em;
+    color: #555;
+    margin-top: 5px;
+}

@@ -1,0 +1,244 @@
+/* CSS Reset básico para consistência entre navegadores */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* -------------------- Cabecalho e Menu Hamburguer (Mobile-first) -------------------- */
+.cabecalho {
+    background: #333;
+    color: #fff;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cabecalho h1 {
+    font-size: 1.5rem;
+}
+
+.menu {
+    position: relative;
+}
+
+/* Oculta o checkbox */
+.menu-toggle {
+    display: none;
+}
+
+/* Estilo do ícone de 3 barras (menu hamburguer) */
+.menu-icon {
+    display: block;
+    cursor: pointer;
+    padding: 10px;
+    width: 30px;
+}
+
+.menu-icon .bar {
+    display: block;
+    width: 100%;
+    height: 3px;
+    background: #fff;
+    margin: 5px 0;
+    transition: all 0.3s ease;
+}
+
+/* Esconde a lista de navegação por padrão */
+.menu ul {
+    list-style: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background: #444;
+    width: 200px;
+    display: none;
+    flex-direction: column;
+}
+
+.menu ul a {
+    display: block;
+    padding: 15px;
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Mostra o menu quando o checkbox está marcado */
+#menu-toggle:checked ~ ul {
+    display: flex;
+}
+
+/* -------------------- Layouts e Conteúdo (Mobile-first) -------------------- */
+.conteudo {
+    padding: 1rem;
+}
+
+h2 {
+    margin-bottom: 1rem;
+}
+
+/* Cards Responsivos */
+.cards-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.card {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.card img {
+    max-width: 100%; /* Imagem se adapta ao tamanho do seu contêiner */
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+/* -------------------- Tabela Responsiva (Mobile-first) -------------------- */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+thead {
+    display: none; /* Oculta o cabeçalho da tabela em mobile */
+}
+
+tr {
+    display: block;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 10px;
+    padding: 10px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+td {
+    display: block;
+    text-align: right;
+    border: none;
+    padding-left: 50%; /* Espaço para o pseudo-elemento */
+    position: relative;
+}
+
+/* Adiciona o "cabeçalho" em pseudo-elemento para mobile */
+td::before {
+    content: attr(data-label);
+    position: absolute;
+    left: 10px;
+    font-weight: bold;
+}
+
+/* -------------------- Rodapé -------------------- */
+.rodape {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    position: sticky;
+    bottom: 0;
+}
+
+/* -------------------- MEDIA QUERIES (Breakpoints) -------------------- */
+
+/* Tablet: min-width de 768px */
+@media (min-width: 768px) {
+    .cabecalho {
+        justify-content: space-around;
+    }
+    
+    .menu-icon {
+        display: none; /* Oculta o ícone hamburguer */
+    }
+
+    .menu ul {
+        display: flex; /* Mostra o menu na horizontal */
+        position: static;
+        width: auto;
+        flex-direction: row;
+        background: none;
+    }
+
+    .menu ul a {
+        padding: 10px 15px;
+        color: #fff;
+        background: #555;
+        border-radius: 5px;
+        margin-left: 10px;
+    }
+
+    .cards-container {
+        flex-direction: row; /* Cards lado a lado */
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .card {
+        flex: 1 1 calc(50% - 40px); /* 2 cards por linha */
+        max-width: calc(50% - 40px);
+    }
+    
+    /* Tabela em formato de tabela */
+    table {
+        display: table;
+        background: #fff;
+        border-radius: 8px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr {
+        display: table-row;
+        border-bottom: 1px solid #ddd;
+        margin: 0;
+        padding: 0;
+        box-shadow: none;
+    }
+    
+    th, td {
+        display: table-cell;
+        padding: 12px;
+        text-align: left;
+    }
+    
+    td::before {
+        content: none;
+    }
+}
+
+/* Desktop: min-width de 1024px */
+@media (min-width: 1024px) {
+    .conteudo {
+        max-width: 1200px;
+        margin: auto;
+    }
+    
+    .cards-container {
+        justify-content: space-between;
+    }
+
+    .card {
+        flex: 1 1 calc(33.3% - 20px); /* 3 cards por linha */
+        max-width: calc(33.3% - 20px);
+    }
+    
+    .menu ul a:hover {
+        background-color: #777;
+    }
+}
