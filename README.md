@@ -1,2 +1,10 @@
-# qualifica-sp-programa-o-web
-Atividades práticas entregues no curso de Programação Web.
+## Prática 12
+
+### Descrição:
+As atividades executadas no decorrer do curso foram inseridas para apreciação.
+
+
+### Tecnologias utilizadas:
+- HTML
+- CSS
+- JavaScript
